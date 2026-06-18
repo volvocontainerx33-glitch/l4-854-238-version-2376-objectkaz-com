@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>搜索筛选-热播电影大全-热门影片片库-热门内容持续更新</title>
+  <meta name="description" content="搜索热播电影大全片库，按标题、分类、年份、类型快速筛选影片。">
+  <meta name="keywords" content="热播电影大全,热播电影,热门影片,电影片库,内容更新,精选影片">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="热播电影大全首页">
+      <span class="brand-icon" aria-hidden="true">▶</span>
+      <span class="brand-text">热播电影大全</span>
+    </a>
+
+    <nav class="main-nav" aria-label="主导航">
+      <a href="index.html">首页</a>
+      <a href="categories.html">分类</a>
+      <a href="ranking.html">排行</a>
+      <a href="catalog.html">片库</a>
+          <a href="category/genre-001.html">剧情</a>
+          <a href="category/genre-002.html">悬疑</a>
+          <a href="category/genre-003.html">喜剧</a>
+          <a href="category/genre-004.html">动作</a>
+          <a href="category/genre-005.html">爱情</a>
+    </nav>
+
+    <form class="header-search" action="search.html" method="get">
+      <label class="sr-only" for="header-search-root">搜索影片</label>
+      <input id="header-search-root" type="search" name="q" placeholder="搜索影片..." autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+
+    <button class="menu-toggle" type="button" aria-label="打开导航" data-menu-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <div class="mobile-panel" data-mobile-panel>
+    <a href="index.html">首页</a>
+    <a href="categories.html">分类总览</a>
+    <a href="ranking.html">排行榜</a>
+    <a href="catalog.html">完整片库</a>
+    <a href="search.html">搜索筛选</a>
+  </div>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <span class="page-kicker">搜索筛选</span>
+    <h1>搜索热播影片与分类片库</h1>
+    <p>支持按影片标题、年份、地区、类型、标签与简介关键词快速筛选。</p>
+  </div>
+</section>
+
+<section class="page-section">
+  <form class="filters" data-search-form>
+    <input type="search" name="q" placeholder="输入影片名、标签、地区或简介关键词" autocomplete="off">
+    <select name="genre" aria-label="类型筛选"></select>
+    <select name="year" aria-label="年份筛选"></select>
+    <select name="type" aria-label="格式筛选"></select>
+    <button class="primary-button" type="submit">筛选</button>
+  </form>
+
+  <p class="result-summary" data-result-summary>正在载入影片数据...</p>
+
+  <div class="movie-grid" data-search-results>
+<a class="movie-card" href="video/0001.html" data-title="地狱1979" data-year="2023" data-region="柬埔寨">
+  <span class="card-cover">
+    <img src="1.jpg" alt="地狱1979" loading="lazy">
+    <span class="year-badge">2023</span>
+    <span class="play-mask">▶</span>
+  </span>
+  <span class="card-body">
+    <strong>地狱1979</strong>
+    <em>1979年，一名幸存者在尸堆中醒来，他必须在两周内穿越被地雷覆盖的死亡之路，去泰国边境报信。</em>
+    <span class="card-meta">
+      <span>柬埔寨</span>
+      <span>历史, 剧情, 战争</span>
+    </span>
+  </span>
+</a>
+<a class="movie-card" href="video/0002.html" data-title="沃伊采克" data-year="2017" data-region="德国">
+  <span class="card-cover">
+    <img src="2.jpg" alt="沃伊采克" loading="lazy">
+    <span class="year-badge">2017</span>
+    <span class="play-mask">▶</span>
+  </span>
+  <span class="card-body">
+    <strong>沃伊采克</strong>
+    <em>一战战壕里，一个被所有人欺负的列兵沃伊采克，唯一的朋友是一只老鼠。</em>
+    <span class="card-meta">
+      <span>德国</span>
+      <span>剧情, 战争</span>
+    </span>
+  </span>
+</a>
+<a class="movie-card" href="video/0003.html" data-title="绝妙青春" data-year="2026" data-region="中国大陆">
+  <span class="card-cover">
+    <img src="3.jpg" alt="绝妙青春" loading="lazy">
+    <span class="year-badge">2026</span>
+    <span class="play-mask">▶</span>
+  </span>
+  <span class="card-body">
+    <strong>绝妙青春</strong>
+    <em>高三下学期，五个成绩垫底的学生组了一支朋克乐队，目标是在毕业典礼上唱自己的歌。</em>
+    <span class="card-meta">
+      <span>中国大陆</span>
+      <span>青春, 校园, 喜剧</span>
+    </span>
+  </span>
+</a>
+<a class="movie-card" href="video/0004.html" data-title="与卿行" data-year="2025" data-region="中国">
+  <span class="card-cover">
+    <img src="4.jpg" alt="与卿行" loading="lazy">
+    <span class="year-badge">2025</span>
+    <span class="play-mask">▶</span>
+  </span>
+  <span class="card-body">
+    <strong>与卿行</strong>
+    <em>武功高强的落魄女将军被迫伪装成书童，保护一个体弱多病、腹黑至极的公子。</em>
+    <span class="card-meta">
+      <span>中国</span>
+      <span>古装、爱情、武侠</span>
+    </span>
+  </span>
+</a>
+<a class="movie-card" href="video/0005.html" data-title="八月八日（电影）" data-year="2012" data-region="俄罗斯">
+  <span class="card-cover">
+    <img src="5.jpg" alt="八月八日（电影）" loading="lazy">
+    <span class="year-badge">2012</span>
+    <span class="play-mask">▶</span>
+  </span>
+  <span class="card-body">
+    <strong>八月八日（电影）</strong>
+    <em>一位母亲穿越南奥塞梯战区去寻找儿子，沿途只有一辆破车和一个叫“八月八日”的儿童机器人玩具陪伴。</em>
+    <span class="card-meta">
+      <span>俄罗斯</span>
+      <span>战争 / 动作 / 剧情</span>
+    </span>
+  </span>
+</a>
+<a class="movie-card" href="video/0006.html" data-title="黑唇" data-year="2024" data-region="中国香港">
+  <span class="card-cover">
+    <img src="6.jpg" alt="黑唇" loading="lazy">
+    <span class="year-badge">2024</span>
+    <span class="play-mask">▶</span>
+  </span>
+  <span class="card-body">
+    <strong>黑唇</strong>
+    <em>一支流传于网红界的“黑唇”口红，谁涂了它就能获得魅力，但三天后必定离奇失踪。</em>
+    <span class="card-meta">
+      <span>中国香港</span>
+      <span>悬疑 / 惊悚</span>
+    </span>
+  </span>
+</a>
+<a class="movie-card" href="video/0007.html" data-title="异族恩仇" data-year="2014" data-region="哈萨克斯坦 / 俄罗斯">
+  <span class="card-cover">
+    <img src="7.jpg" alt="异族恩仇" loading="lazy">
+    <span class="year-badge">2014</span>
+    <span class="play-mask">▶</span>
+  </span>
+  <span class="card-body">
+    <strong>异族恩仇</strong>
+    <em>两个世代血仇的游牧部落，因为一场突如其来的瘟疫，被迫共处同一片绿洲。</em>
+    <span class="card-meta">
+      <span>哈萨克斯坦 / 俄罗斯</span>
+      <span>历史、战争、动作、悲情</span>
+    </span>
+  </span>
+</a>
+<a class="movie-card" href="video/0008.html" data-title="赌霸粤语" data-year="2025" data-region="中国香港">
+  <span class="card-cover">
+    <img src="8.jpg" alt="赌霸粤语" loading="lazy">
+    <span class="year-badge">2025</span>
+    <span class="play-mask">▶</span>
+  </span>
+  <span class="card-body">
+    <strong>赌霸粤语</strong>
+    <em>澳门街市卖鱼妹意外继承了赌神的一成功力，被迫代师出战亚洲赌王争霸赛。</em>
+    <span class="card-meta">
+      <span>中国香港</span>
+      <span>喜剧 / 动作 / 赌博</span>
+    </span>
+  </span>
+</a>
+<a class="movie-card" href="video/0009.html" data-title="豹2025" data-year="2025" data-region="法国/德国">
+  <span class="card-cover">
+    <img src="9.jpg" alt="豹2025" loading="lazy">
+    <span class="year-badge">2025</span>
+    <span class="play-mask">▶</span>
+  </span>
+  <span class="card-body">
+    <strong>豹2025</strong>
+    <em>2025年，非洲仅存的野生花豹被改造为终极暗杀武器，雇佣兵必须阻止“豹化士兵”反噬人类。</em>
+    <span class="card-meta">
+      <span>法国/德国</span>
+      <span>科幻，动作，政治</span>
+    </span>
+  </span>
+</a>
+<a class="movie-card" href="video/0010.html" data-title="自梳女粤语" data-year="2024" data-region="中国香港 / 中国大陆">
+  <span class="card-cover">
+    <img src="10.jpg" alt="自梳女粤语" loading="lazy">
+    <span class="year-badge">2024</span>
+    <span class="play-mask">▶</span>
+  </span>
+  <span class="card-body">
+    <strong>自梳女粤语</strong>
+    <em>清末民初，一群在丝厂打工并发誓终身不嫁的“自梳女”，如何对抗命运与宗族。</em>
+    <span class="card-meta">
+      <span>中国香港 / 中国大陆</span>
+      <span>剧情 / 历史 / 女性</span>
+    </span>
+  </span>
+</a>
+<a class="movie-card" href="video/0011.html" data-title="神鎗飞镖客" data-year="2025" data-region="意大利">
+  <span class="card-cover">
+    <img src="11.jpg" alt="神鎗飞镖客" loading="lazy">
+    <span class="year-badge">2025</span>
+    <span class="play-mask">▶</span>
+  </span>
+  <span class="card-body">
+    <strong>神鎗飞镖客</strong>
+    <em>不用枪，用飞镖的独行侠闯入无法无天的小镇，向篡位的大地主发出挑战。</em>
+    <span class="card-meta">
+      <span>意大利</span>
+      <span>西部, 动作</span>
+    </span>
+  </span>
+</a>
+<a class="movie-card" href="video/0012.html" data-title="悄悄跟着我" data-year="2025" data-region="中国台湾">
+  <span class="card-cover">
+    <img src="12.jpg" alt="悄悄跟着我" loading="lazy">
+    <span class="year-badge">2025</span>
+    <span class="play-mask">▶</span>
+  </span>
+  <span class="card-body">
+    <strong>悄悄跟着我</strong>
+    <em>社恐女孩意外发现身后跟着一个只有自己能看见的啰嗦鬼魂，对方竟是自己素未谋面的太爷爷。</em>
+    <span class="card-meta">
+      <span>中国台湾</span>
+      <span>喜剧, 奇幻, 家庭</span>
+    </span>
+  </span>
+</a>
+<a class="movie-card" href="video/0013.html" data-title="车在囧途" data-year="2012" data-region="中国大陆">
+  <span class="card-cover">
+    <img src="13.jpg" alt="车在囧途" loading="lazy">
+    <span class="year-badge">2012</span>
+    <span class="play-mask">▶</span>
+  </span>
+  <span class="card-body">
+    <strong>车在囧途</strong>
+    <em>春节前夕，六个陌生人拼一辆破面包车回家，一路上乌龙与温暖交替上演。</em>
+    <span class="card-meta">
+      <span>中国大陆</span>
+      <span>喜剧，公路，剧情</span>
+    </span>
+  </span>
+</a>
+<a class="movie-card" href="video/0014.html" data-title="非凡夏日" data-year="2019" data-region="荷兰 / 德国">
+  <span class="card-cover">
+    <img src="14.jpg" alt="非凡夏日" loading="lazy">
+    <span class="year-badge">2019</span>
+    <span class="play-mask">▶</span>
+  </span>
+  <span class="card-body">
+    <strong>非凡夏日</strong>
+    <em>在度假小岛上，害怕孤独的男孩开始“练习”独处，却意外发现了祖母藏了半个世纪的秘密。</em>
+    <span class="card-meta">
+      <span>荷兰 / 德国</span>
+      <span>剧情 / 家庭</span>
+    </span>
+  </span>
+</a>
+<a class="movie-card" href="video/0015.html" data-title="酷爸俏妈" data-year="2022" data-region="中国大陆">
+  <span class="card-cover">
+    <img src="15.jpg" alt="酷爸俏妈" loading="lazy">
+    <span class="year-badge">2022</span>
+    <span class="play-mask">▶</span>
+  </span>
+  <span class="card-body">
+    <strong>酷爸俏妈</strong>
+    <em>两个单身家长伪装夫妻参加夏令营，结果被孩子们当众“揭发”。</em>
+    <span class="card-meta">
+      <span>中国大陆</span>
+      <span>家庭/喜剧</span>
+    </span>
+  </span>
+</a>
+<a class="movie-card" href="video/0016.html" data-title="柏蒂娜的苦泪" data-year="2024" data-region="德国">
+  <span class="card-cover">
+    <img src="16.jpg" alt="柏蒂娜的苦泪" loading="lazy">
+    <span class="year-badge">2024</span>
+    <span class="play-mask">▶</span>
+  </span>
+  <span class="card-body">
+    <strong>柏蒂娜的苦泪</strong>
+    <em>著名时装设计师包养了年轻女模特，试图将她塑造成完美缪斯，最终却发现自己在渴望被奴役。</em>
+    <span class="card-meta">
+      <span>德国</span>
+      <span>剧情, 同性, 文艺</span>
+    </span>
+  </span>
+</a>
+<a class="movie-card" href="video/0017.html" data-title="界限" data-year="2017" data-region="中国大陆">
+  <span class="card-cover">
+    <img src="17.jpg" alt="界限" loading="lazy">
+    <span class="year-badge">2017</span>
+    <span class="play-mask">▶</span>
+  </span>
+  <span class="card-body">
+    <strong>界限</strong>
+    <em>婚姻外的试探让韩宇和姐姐在“守着同一屋檐”中互相怀疑，边界模糊到连名字都可能被替换。</em>
+    <span class="card-meta">
+      <span>中国大陆</span>
+      <span>心理、家庭伦理、惊悚</span>
+    </span>
+  </span>
+</a>
+<a class="movie-card" href="video/0018.html" data-title="天涯父子情" data-year="2023" data-region="美国">
+  <span class="card-cover">
+    <img src="18.jpg" alt="天涯父子情" loading="lazy">
+    <span class="year-badge">2023</span>
+    <span class="play-mask">▶</span>
+  </span>
+  <span class="card-body">
+    <strong>天涯父子情</strong>
+    <em>患有阿尔茨海默的父亲忘了全世界，却执意要带儿子走完五十年前的逃亡路线。</em>
+    <span class="card-meta">
+      <span>美国</span>
+      <span>剧情，家庭</span>
+    </span>
+  </span>
+</a>
+<a class="movie-card" href="video/0019.html" data-title="小黄人大眼萌粤语" data-year="2023" data-region="中国香港">
+  <span class="card-cover">
+    <img src="19.jpg" alt="小黄人大眼萌粤语" loading="lazy">
+    <span class="year-badge">2023</span>
+    <span class="play-mask">▶</span>
+  </span>
+  <span class="card-body">
+    <strong>小黄人大眼萌粤语</strong>
+    <em>会说潮汕口音却听不懂普通话的会发光大眼人意外被卷入地下隧道追捕，少年们的即兴营救与财团夺命实验…</em>
+    <span class="card-meta">
+      <span>中国香港</span>
+      <span>冒险、喜剧、动作</span>
+    </span>
+  </span>
+</a>
+<a class="movie-card" href="video/0020.html" data-title="亲爱的同伙" data-year="2025" data-region="中国香港 / 中国大陆">
+  <span class="card-cover">
+    <img src="20.jpg" alt="亲爱的同伙" loading="lazy">
+    <span class="year-badge">2025</span>
+    <span class="play-mask">▶</span>
+  </span>
+  <span class="card-body">
+    <strong>亲爱的同伙</strong>
+    <em>警方安插在黑帮的卧底，意外发现黑帮也安插了人在警队，两人必须联手演出“我是谁”。</em>
+    <span class="card-meta">
+      <span>中国香港 / 中国大陆</span>
+      <span>犯罪 / 悬疑</span>
+    </span>
+  </span>
+</a>
+<a class="movie-card" href="video/0021.html" data-title="四骑士" data-year="2025" data-region="美国">
+  <span class="card-cover">
+    <img src="21.jpg" alt="四骑士" loading="lazy">
+    <span class="year-badge">2025</span>
+    <span class="play-mask">▶</span>
+  </span>
+  <span class="card-body">
+    <strong>四骑士</strong>
+    <em>四名哈佛符号学教授发现天启四骑士不是神话，而是一套正在启动的AI算法，且他们都已被植入芯片。</em>
+    <span class="card-meta">
+      <span>美国</span>
+      <span>悬疑 / 科幻 / 惊悚</span>
+    </span>
+  </span>
+</a>
+<a class="movie-card" href="video/0022.html" data-title="遥远" data-year="2002" data-region="土耳其">
+  <span class="card-cover">
+    <img src="22.jpg" alt="遥远" loading="lazy">
+    <span class="year-badge">2002</span>
+    <span class="play-mask">▶</span>
+  </span>
+  <span class="card-body">
+    <strong>遥远</strong>
+    <em>伊斯坦布尔的一位成功摄影师收留了失业的表弟，两个男人在同一间公寓里，各自面对着“距离”带来的折…</em>
+    <span class="card-meta">
+      <span>土耳其</span>
+      <span>剧情/文艺</span>
+    </span>
+  </span>
+</a>
+<a class="movie-card" href="video/0023.html" data-title="迅速" data-year="2025" data-region="中国大陆">
+  <span class="card-cover">
+    <img src="23.jpg" alt="迅速" loading="lazy">
+    <span class="year-badge">2025</span>
+    <span class="play-mask">▶</span>
+  </span>
+  <span class="card-body">
+    <strong>迅速</strong>
+    <em>为揪出内鬼，一名卧底警察被迫加入午夜地下赛车，却发现目标早已盯上自己。</em>
+    <span class="card-meta">
+      <span>中国大陆</span>
+      <span>犯罪, 动作</span>
+    </span>
+  </span>
+</a>
+<a class="movie-card" href="video/0024.html" data-title="夜车惊魂" data-year="2026" data-region="美国">
+  <span class="card-cover">
+    <img src="24.jpg" alt="夜车惊魂" loading="lazy">
+    <span class="year-badge">2026</span>
+    <span class="play-mask">▶</span>
+  </span>
+  <span class="card-body">
+    <strong>夜车惊魂</strong>
+    <em>一班深夜地铁莫名不停站，乘客们发现车窗外的隧道墙壁上，有东西正在跟着列车跑。</em>
+    <span class="card-meta">
+      <span>美国</span>
+      <span>恐怖, 悬疑</span>
+    </span>
+  </span>
+</a>
+  </div>
+
+  <div class="pagination">
+    <button class="secondary-button" type="button" data-load-more>加载更多</button>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <section>
+        <div class="footer-brand">
+          <span class="brand-icon" aria-hidden="true">▶</span>
+          <span>热播电影大全</span>
+        </div>
+        <p>热播电影大全页面聚合正在受到关注的影片内容，提供热播片单与分类片库。</p>
+      </section>
+
+      <section>
+        <h2>快速链接</h2>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="categories.html">分类总览</a></li>
+          <li><a href="ranking.html">排行榜</a></li>
+          <li><a href="catalog.html">完整片库</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>热门分类</h2>
+        <ul>
+        <li><a href="category/genre-001.html">剧情</a></li>
+        <li><a href="category/genre-002.html">悬疑</a></li>
+        <li><a href="category/genre-003.html">喜剧</a></li>
+        <li><a href="category/genre-004.html">动作</a></li>
+        <li><a href="category/genre-005.html">爱情</a></li>
+        <li><a href="category/genre-006.html">犯罪</a></li>
+        <li><a href="category/genre-007.html">奇幻</a></li>
+        <li><a href="category/genre-008.html">惊悚</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>内容说明</h2>
+        <p>本站聚合热门影片内容、分类片库、热播排行与作品详情，方便用户快速浏览和检索。</p>
+      </section>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 热播电影大全. 热门内容持续更新。</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+<script src="assets/movies.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
